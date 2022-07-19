@@ -1,5 +1,5 @@
 module.exports = {
-  content:  [
+  content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
@@ -35,13 +35,13 @@ module.exports = {
   'md': {'max': '767px'},
   // => @media (max-width: 767px) { ... }
 
-'sm': {'max': '450px'},
+  'sm': {'max': '450px'},
   // => @media (max-width: 639px) { ... }
   
   'xsm':{'max':'400'},
-    // => @media (max-width: 400px) { ... }
+  // => @media (max-width: 400px) { ... }
   
-    '2xsm': {'max': '350px'},
+  '2xsm': {'max': '350px'},
   // => @media (max-width: 350px) { ... }
 },
     

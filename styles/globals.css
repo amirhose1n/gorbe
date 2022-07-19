@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @font-face {
   font-family: 'lacquer';
   src: url('../public/fonts/Lacquer-Regular.ttf');
