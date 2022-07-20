@@ -7,50 +7,6 @@
   src: url('../public/fonts/Lacquer-Regular.ttf');
 }
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-@layer components {
-
-
-
-
-
-  .rightanimation{
-    overflow: hidden;
-  animation: rightanimation-appear 4s ease-in forwards;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-duration: 15s;
-  
-
-}
-
-@keyframes rightanimation-appear {
-  from {
-    opacity: 0.8;
-    transform:translateX(20rem);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(-100rem);
-  }
-}
-
-}
 
 
 
