@@ -13,7 +13,7 @@ export default function Home() {
    
   return (
   <>
-    <Image src={'/images/gorbe.gif'} layout='fill'  objectFit='cover'/>
+    <Image src={'/images/gorbe.gif'} unoptimized={true} layout='fill'  objectFit='cover'/>
       <div className='mainmenu h-screen flex m-0 z-50 w-full min-h-full flex justify-center items-center'> 
         <div className='relative flex flex-col text-center pt-20 items-center gap-y-6'>
           {menus.map(({image, link}) => (
