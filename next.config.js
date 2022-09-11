@@ -1,6 +1,14 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+const withImages = require("next-images");
+const config = {
   reactStrictMode: true,
-}
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: ["@svgr/webpack"]
+    });
 
-module.exports = nextConfig
+    return config;
+  }
+};
+module.exports = withImages(config);

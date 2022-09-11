@@ -10,9 +10,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@svgr/webpack": "^6.3.0",
+    "babel-plugin-inline-react-svg": "^2.0.1",
     "firebase-admin": "^11.0.0",
     "firebase-functions": "^3.22.0",
     "next": "12.1.5",
+    "next-images": "^1.8.4",
     "react": "18.1.0",
     "react-dom": "18.1.0"
   },
