@@ -19,7 +19,7 @@ const Projects = ({ projects }) => {
     return <Graffities data={graffities} />;
   }
 
-  if (index === "illustrator") {
+  if (index === "illustrators") {
     return <Illustrators data={illustrators} />;
   }
 
@@ -27,7 +27,7 @@ const Projects = ({ projects }) => {
 };
 
 export async function getServerSideProps({ query: { index } }) {
-  if (index !== "graffities" && index !== "illustrator") {
+  if (index !== "graffities" && index !== "illustrators") {
     return {
       props: {
         error: {

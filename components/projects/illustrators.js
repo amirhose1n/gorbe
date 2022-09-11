@@ -1,5 +1,5 @@
-const Illustrator = ({ illustrators }) => {
-  console.log({ illustrators });
+const Illustrator = ({ data }) => {
+  console.log({ data });
 
   return <div>Hello illustor</div>;
 };
