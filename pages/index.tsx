@@ -27,6 +27,7 @@ function Home() {
                   <img
                     src={`/images/texts/${image}`}
                     alt={image}
+                    //@ts-ignore
                     layout="fill"
                     className="!object-contain !w-auto !relative "
                   />

@@ -11,6 +11,7 @@ module.exports = {
           100: "#1F3753",
           200: "#233a5a",
         },
+        light: {},
       },
       fontFamily: {
         orbitron: "Orbitron",

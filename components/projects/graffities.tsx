@@ -1,7 +1,7 @@
 import Image from "next/image";
 import WorkRenderer from "./workRenderer";
 
-const Graffities = ({ data }) => {
+function Graffiti({ data }: any) {
   console.log({ data });
 
   return (
@@ -24,6 +24,6 @@ const Graffities = ({ data }) => {
       </div>
     </div>
   );
-};
+}
 
-export default Graffities;
+export default Graffiti;

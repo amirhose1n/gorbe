@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-const WorkRenderer = ({ data }) => {
+function WorkRenderer({ data }: any) {
   return (
     <div className="w-full desktop:gap-4 gap-2 grid desktop:grid-cols-3 grid-cols-1">
       {data &&
-        data.map(({ covers: { max_808_webp }, name, url }) => {
+        data.map(({ covers: { max_808_webp }, name, url }: any) => {
           return (
             <div key={name}>
               <Link href={url}>
@@ -18,6 +18,6 @@ const WorkRenderer = ({ data }) => {
         })}
     </div>
   );
-};
+}
 
 export default WorkRenderer;

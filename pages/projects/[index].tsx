@@ -1,23 +1,23 @@
-import fetchBehance from "../api/behance";
+// import fetchBehance from "../api/behance";
 import { useRouter } from "next/router";
 import Graffities from "../../components/projects/graffities";
 import Illustrators from "../../components/projects/illustrators";
 
-const Projects = ({ projects }) => {
+function Projects({ projects }: any) {
   const {
     query: { index },
   } = useRouter();
 
-  const illustrators =
-    projects &&
-    projects.length > 0 &&
-    projects.filter((project) => {
-      return project.name.includes("- Illustration");
-    });
+  // const illustrators =
+  //   projects &&
+  //   projects.length > 0 &&
+  //   projects.filter((project: any) => {
+  //     return project.name.includes("- Illustration");
+  //   });
   const graffities =
     projects &&
     projects.length > 0 &&
-    projects.filter((project) => {
+    projects.filter((project: any) => {
       return project.name.includes("- Graffiti");
     });
 
@@ -26,13 +26,13 @@ const Projects = ({ projects }) => {
   }
 
   if (index === "illustrators") {
-    return <Illustrators data={illustrators} />;
+    return <Illustrators />;
   }
 
   return new Error("Page not found !!!");
-};
+}
 
-export async function getServerSideProps({ query: { index } }) {
+export async function getServerSideProps({ query: { index } }: any) {
   if (index !== "graffities" && index !== "illustrators") {
     return {
       props: {
