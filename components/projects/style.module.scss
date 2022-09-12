@@ -1,0 +1,15 @@
+.layout {
+  @apply max-w-layout w-full;
+
+  &--center {
+    @apply mx-auto;
+  }
+}
+
+.layoutfluid {
+  @apply max-w-fluid w-full;
+
+  &--center {
+    @apply mx-auto;
+  }
+}

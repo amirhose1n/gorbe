@@ -1,14 +1,14 @@
 /** @type {import('next').NextConfig} */
-const withImages = require("next-images");
-const config = {
-  reactStrictMode: true,
-  webpack(config) {
-    config.module.rules.push({
-      test: /\.svg$/,
-      use: ["@svgr/webpack"]
-    });
+const withFonts = require("next-fonts");
 
+module.exports = withFonts({
+  enableSvg: true,
+  reactStrictMode: true,
+  images: {
+    domains: ["mir-s3-cdn-cf.behance.net"],
+    formats: ["image/webp"],
+  },
+  webpack(config, options) {
     return config;
-  }
-};
-module.exports = withImages(config);
+  },
+});
