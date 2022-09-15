@@ -20,6 +20,7 @@ module.exports = {
         layout: "1200px",
       },
       screens: {
+        tablet: `768px`,
         desktop: `${DESKTOP_WIDTH}px`,
       },
     },

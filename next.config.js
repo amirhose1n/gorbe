@@ -8,7 +8,7 @@ module.exports = withFonts({
     domains: ["mir-s3-cdn-cf.behance.net"],
     formats: ["image/webp"],
   },
-  webpack(config, options) {
+  webpack(config) {
     return config;
   },
 });
