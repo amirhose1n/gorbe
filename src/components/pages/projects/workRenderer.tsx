@@ -9,7 +9,7 @@ function WorkRenderer({ data }: any) {
   console.log({ data });
   return (
     <Style>
-      <div className="w-full desktop:gap-x-6 desktop:gap-y-8 gap-y-4 grid tablet:gird-cols-2 desktop:grid-cols-3  grid-cols-1 desktop:px-0">
+      <div className="max-w-max desktop:gap-x-6 desktop:gap-y-8 gap-y-4 grid grid-cols-1 desktop:grid-cols-3 tablet:gap-x-4 tablet:grid-cols-2 desktop:px-0">
         {data &&
           data.map(
             ({
@@ -19,10 +19,10 @@ function WorkRenderer({ data }: any) {
               stats: { views, appreciations },
             }: any) => {
               return (
-                <div key={name} className="flex flex-col">
+                <div key={name} className="flex flex-col max-w-max">
                   <div
                     className={classNames(
-                      "flex flex-col relative items-center justify-center w-max max-w-full"
+                      "flex flex-col relative items-center justify-center max-w-max "
                     )}
                   >
                     <Link href={url}>
