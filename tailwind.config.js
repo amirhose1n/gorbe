@@ -14,8 +14,7 @@ module.exports = {
         light: {},
       },
       fontFamily: {
-        orbitron: "Orbitron",
-        poppins: "Poppins",
+        helvetica: "HelveticaW01-Roman",
       },
       maxWidth: {
         layout: "1200px",

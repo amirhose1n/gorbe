@@ -2,12 +2,10 @@ import Image from "next/image";
 import WorkRenderer from "./workRenderer";
 
 function Graffiti({ data }: any) {
-  console.log({ data });
-
   return (
     <div className="bg-dark-100 font-bold min-h-screen">
       <div className="layout layout--center">
-        <div className="desktop:py-16 py-6">
+        <div className="desktop:py-16 py-6 desktop:px-0 px-6 relative">
           <div>
             <Image
               src="/images/texts/Graffiti.png"

@@ -8,12 +8,12 @@ function Projects({ projects }: any) {
     query: { index },
   } = useRouter();
 
-  // const illustrators =
-  //   projects &&
-  //   projects.length > 0 &&
-  //   projects.filter((project: any) => {
-  //     return project.name.includes("- Illustration");
-  //   });
+  const illustrators =
+    projects &&
+    projects.length > 0 &&
+    projects.filter((project: any) => {
+      return project.name.includes("- Illustration");
+    });
   const graffities =
     projects &&
     projects.length > 0 &&
@@ -26,7 +26,7 @@ function Projects({ projects }: any) {
   }
 
   if (index === "illustrators") {
-    return <Illustrators />;
+    return <Illustrators data={illustrators} />;
   }
 
   return new Error("Page not found !!!");
