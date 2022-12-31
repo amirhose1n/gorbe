@@ -1,9 +1,9 @@
 import classNames from "classnames";
 import Image from "next/image";
 import Link from "next/link";
+import LikeComponent from "./like";
 import Style from "./style";
 import ViewComponent from "./view";
-import LikeComponent from "./like";
 
 function WorkRenderer({ data }: any) {
   console.log({ data });
@@ -12,12 +12,7 @@ function WorkRenderer({ data }: any) {
       <div className="max-w-max desktop:gap-x-6 desktop:gap-y-8 gap-y-4 grid grid-cols-1 desktop:grid-cols-3 tablet:gap-x-4 tablet:grid-cols-2 desktop:px-0">
         {data &&
           data.map(
-            ({
-              covers: { max_808_webp },
-              name,
-              url,
-              stats: { views, appreciations },
-            }: any) => {
+            ({ covers, name, url, stats: { views, appreciations } }: any) => {
               return (
                 <div key={name} className="flex flex-col max-w-max">
                   <div
@@ -28,7 +23,7 @@ function WorkRenderer({ data }: any) {
                     <Link href={url}>
                       <a target={"_blank"} className="card w-full">
                         <Image
-                          src={max_808_webp}
+                          src={covers["404"]}
                           width={400}
                           height={250}
                           layout="fixed"
