@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import Link from "next/link";
 
@@ -38,7 +39,7 @@ function Home() {
         />
       </div>
       <div className="mainmenu h-screen flex m-0 z-50 w-full min-h-full flex justify-center items-center absolute">
-        <div className="relative flex flex-col text-center pt-20 mt-6 items-center gap-y-8">
+        <div className="relative flex flex-col text-center pt-20 items-center gap-y-4">
           {menus.map(({ image, link, size, target = "_self" }) => (
             <div
               key={image}
