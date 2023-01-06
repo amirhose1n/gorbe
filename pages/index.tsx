@@ -46,7 +46,7 @@ function Home() {
             >
               <Link href={link}>
                 <a target={target}>
-                  <Image src={`/images/texts/${image}`} alt={image} {...size} />
+                  <img src={`/images/texts/${image}`} alt={image} {...size} />
                 </a>
               </Link>
             </div>
