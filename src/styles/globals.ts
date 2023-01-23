@@ -1,10 +1,10 @@
-import tw from "twin.macro";
 import { createGlobalStyle } from "styled-components";
+import tw from "twin.macro";
 
 const GlobalStyle = createGlobalStyle`
 
 .layout {
-    ${tw`max-w-layout w-full`};
+    ${tw`max-w-layout w-full px-12`};
     &--center {
         ${tw`mx-auto`};
     }

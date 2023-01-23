@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-import Image from "next/image";
 import Link from "next/link";
 
 function Home() {
@@ -29,32 +28,29 @@ function Home() {
   ];
 
   return (
-    <>
+    <div className="relative">
       <div className="z-30">
-        <Image
+        <img
           src={"/images/gorbe.gif"}
           alt="gorbe"
-          layout="fill"
-          objectFit="cover"
+          className="object-cover h-screen"
         />
       </div>
-      <div className="mainmenu h-screen flex m-0 z-50 w-full min-h-full flex justify-center items-center absolute">
+      <div className="mainmenu h-screen m-0 z-50 w-full min-h-full flex justify-center items-center top-0 absolute">
         <div className="relative flex flex-col text-center pt-20 items-center gap-y-4">
           {menus.map(({ image, link, size, target = "_self" }) => (
             <div
               key={image}
               className="hover:scale-110 transition-all duration-200"
             >
-              <Link href={link}>
-                <a target={target}>
-                  <img src={`/images/texts/${image}`} alt={image} {...size} />
-                </a>
+              <Link href={link} target={target}>
+                <img src={`/images/texts/${image}`} alt={image} {...size} />
               </Link>
             </div>
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

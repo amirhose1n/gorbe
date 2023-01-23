@@ -21,7 +21,6 @@ module.exports = {
         layout: "1200px",
       },
       screens: {
-        tablet: "640px",
         desktop: `${DESKTOP_WIDTH}px`,
         ...defaultTheme.screens,
       },
