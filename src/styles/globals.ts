@@ -19,7 +19,9 @@ body  {
 html {
   scroll-behavior: smooth;
 }
-    
+
+
+
 `;
 
 export default GlobalStyle;

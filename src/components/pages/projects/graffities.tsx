@@ -10,11 +10,7 @@ function Graffiti({ data }: any) {
       </Head>
       <div className="layout layout--center  flex flex-col items-center">
         <div className="relative">
-          <PageHeader
-            width={125}
-            height={50}
-            img="/images/texts/Graffiti.png"
-          />
+          <PageHeader width={150} height={60} img="/images/Graffiti.png" />
           <div className="desktop:py-12 py-6 tablet:py-8">
             <WorkRenderer data={data} />
           </div>
