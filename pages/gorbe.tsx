@@ -14,7 +14,7 @@ function Gorbe() {
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
-          className="rounded-md md:h-96 sm:h-64 h-46"
+          className="rounded-md md:h-96 sm:h-64 h-52"
         ></iframe>
         <p className="font-normal text-md sm:text-lg py-12 text-white">
           I’m 26, born, and raised in Mashhad, Iran. I ride my skateboard
