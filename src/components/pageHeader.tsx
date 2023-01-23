@@ -8,15 +8,15 @@ function PageHeader({
   height = 50,
 }: {
   img: string;
-  width: number;
-  height: number;
+  width?: number;
+  height?: number;
 }) {
   const isMobile = useIsMobile();
   return (
     <div className="flex sm:justify-between items-center pt-12 pb-6 md:py-12 md:px-0 relative justify-center">
       <Link
         href="/"
-        className="absolute sm:relative top-8 left-0 cursor-pointer text-bold text-white text-xl transition-all duration-150 hover:text-dark-50"
+        className="absolute sm:relative top-8 sm:top-0 left-0 cursor-pointer text-bold text-white text-xl transition-all duration-150 hover:text-dark-50"
       >
         <Image
           src={"/images/Back.png"}
