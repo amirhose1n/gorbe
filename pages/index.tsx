@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Head from "next/head";
 import Link from "next/link";
 
 function Home() {
@@ -29,6 +30,9 @@ function Home() {
 
   return (
     <div className="relative">
+      <Head>
+        <title>Everythingbygorbe</title>
+      </Head>
       <div className="z-30">
         <img
           src={"/images/gorbe.gif"}

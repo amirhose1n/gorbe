@@ -4,7 +4,7 @@ import tw from "twin.macro";
 const GlobalStyle = createGlobalStyle`
 
 .layout {
-    ${tw`max-w-layout w-full px-12`};
+    ${tw`max-w-layout w-full sm:px-12 px-6`};
     &--center {
         ${tw`mx-auto`};
     }

@@ -1,5 +1,6 @@
 import emailjs from "@emailjs/browser";
 import classNames from "classnames";
+import Head from "next/head";
 import Image from "next/image";
 import { useRef, useState } from "react";
 import { useForm } from "react-hook-form";
@@ -44,17 +45,18 @@ function Contact() {
     setLoading(false);
   };
 
-  console.log({ loading });
-
   return (
     <div className="bg-dark-100 font-bold min-h-screen">
+      <Head>
+        <title>Everythingbygorbe | contact</title>
+      </Head>
       <div className="layout layout--center">
         <PageHeader width={200} height={50} img="/images/Contact.png" />
         <div
           className={classNames("py-6 md:py-24", loading ? "opacity-50" : "")}
         >
           {!isSent && (
-            <div className="flex items-center justify-between lg:flex-row flex-col-reverse gap-8">
+            <div className="flex items-start justify-between lg:flex-row flex-col-reverse gap-8">
               <Image
                 src="/images/SendingMessage.png"
                 width={340}
