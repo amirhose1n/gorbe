@@ -1,7 +1,7 @@
-import fetchBehance from "../api/behance";
 import { useRouter } from "next/router";
 import Graffities from "../../src/components/pages/projects/graffities";
 import Illustrators from "../../src/components/pages/projects/illustrators";
+import fetchBehance from "../api/behance";
 
 function Projects({ projects }: any) {
   const {

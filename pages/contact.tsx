@@ -46,7 +46,7 @@ function Contact() {
   };
 
   return (
-    <div className="bg-dark-100 font-bold min-h-screen">
+    <div className="bg-dark-400 font-medium min-h-screen">
       <Head>
         <title>Everythingbygorbe | contact</title>
       </Head>
@@ -56,17 +56,18 @@ function Contact() {
           className={classNames("py-6 md:py-24", loading ? "opacity-50" : "")}
         >
           {!isSent && (
-            <div className="flex items-start justify-between lg:flex-row flex-col-reverse gap-8">
+            <div className="flex items-start justify-between lg:flex-row flex-col-reverse">
               <Image
                 src="/images/SendingMessage.png"
-                width={340}
-                height={300}
+                width={380}
+                height={335}
                 alt="message"
+                className="mt-4 sm:mt-2"
               />
               <form
                 ref={form}
                 onSubmit={handleSubmit(onSubmit)}
-                className="flex flex-col gap-y-2 desktop:w-1/2 tablet:w-2/3 w-full"
+                className="flex flex-col desktop:w-1/2 tablet:w-2/3 w-full"
               >
                 <input
                   placeholder="your email address*"
@@ -80,10 +81,10 @@ function Contact() {
                       message: "Entered value does not match email format!",
                     },
                   })}
-                  className="p-2 text-md font-semibold rounded-md"
+                  className="p-2 text-md  rounded-md my-2"
                 />
                 {errors.reply_to && (
-                  <span className="text-dark-300 font-semibold text-sm">
+                  <span className="text-dark-300  text-sm">
                     {errors.reply_to.message}
                   </span>
                 )}
@@ -91,28 +92,28 @@ function Contact() {
                   placeholder="name"
                   defaultValue=""
                   {...register("name")}
-                  className="p-2 text-md font-semibold rounded-md"
+                  className="p-2 text-md  rounded-md my-2"
                 />
                 <input
                   placeholder="subject"
                   {...register("subject")}
-                  className="p-2 text-md font-semibold rounded-md"
+                  className="p-2 text-md  rounded-md my-2"
                 />
                 <textarea
                   placeholder="message"
                   {...register("message", {
                     required: true,
                   })}
-                  className="p-2 text-md font-semibold rounded-md"
+                  className="p-2 text-md  rounded-md my-2"
                 />
                 {errors.message && (
-                  <span className="text-dark-300 font-semibold text-sm">
+                  <span className="text-dark-300  text-sm">
                     This field is required
                   </span>
                 )}
                 <button
                   type="submit"
-                  className="bg-white rounded-md py-2 flex items-center justify-center font-semibold cursor-pointer"
+                  className="bg-[#2f9acd] text-white rounded-md py-2 flex items-center justify-center  cursor-pointer my-2 font-semibold"
                   disabled={loading}
                 >
                   {loading ? (
@@ -140,19 +141,19 @@ function Contact() {
             </div>
           )}
           {isSent && (
-            <div className="flex items-center justify-between md:flex-row flex-col gap-8">
-              <div className="w-auto">
+            <div className="flex items-center justify-between md:flex-row flex-col">
+              <div className="w-auto pb-6">
                 <h1 className="whitespace-wrap md:text-6xl lg:text-8xl text-center text-4xl font-bold text-white">
                   THANK YOU!
                 </h1>
-                <p className="whitespace-wrap md:text-4xl text-xl text-center font-semibold text-white">{`I have received your message.`}</p>
+                <p className="whitespace-wrap md:text-4xl text-xl text-center  text-white">{`I have received your message.`}</p>
               </div>
-              <div className="w-max min-w-max">
+              <div className="max-w-full">
                 <Image
                   src="/images/MessageReceived.png"
                   alt="message received"
-                  width={300}
-                  height={342}
+                  width={400}
+                  height={456}
                 />
               </div>
             </div>

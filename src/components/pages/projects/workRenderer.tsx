@@ -20,51 +20,49 @@ function WorkRenderer({ data }: any) {
                       "flex flex-col relative items-center justify-center max-w-max "
                     )}
                   >
-                    <Link href={url}>
-                      <a target={"_blank"} className="card w-full">
-                        <Image
-                          src={covers["404"]}
-                          width={400}
-                          height={250}
-                          layout="fixed"
-                          objectFit={"cover"}
-                          alt="project"
-                          className="transition transition-transform duration-500"
-                        />
-                        <div className="absolute top-0 bottom-0 right-0 left-0 overflow-hidden">
-                          <div
-                            className="
+                    <Link href={url} target={"_blank"} className="card w-full">
+                      <Image
+                        src={covers["404"]}
+                        width={400}
+                        height={250}
+                        layout="fixed"
+                        objectFit={"cover"}
+                        alt="project"
+                        className="transition transition-transform duration-500"
+                      />
+                      <div className="absolute top-0 bottom-0 right-0 left-0 overflow-hidden">
+                        <div
+                          className="
                           h-1/2 max-h-1/2 absolute right-0 left-0 -bottom-32  
                           card-cover text-white
                           p-4
                           flex items-end
                         "
-                          >
-                            <div className="w-full">
-                              <h1 className="text-white font-semibold desktop:text-md text-md ">
-                                {name
-                                  .replace(" - Illustration", "")
-                                  .replace(" - Graffiti", "")}
-                              </h1>
-                              <div className="flex font-medium justify-between items-center">
-                                <span className="text-sm">Open in behance</span>
-                                <span className="flex items-center gap-x-2">
-                                  <div className="flex items-center gap-x-1">
-                                    <span className="text-sm">
-                                      {appreciations}
-                                    </span>
-                                    <LikeComponent fill="white" />
-                                  </div>
-                                  <div className="flex items-center gap-x-1">
-                                    <span className="text-sm">{views}</span>
-                                    <ViewComponent fill="white" />
-                                  </div>
-                                </span>
-                              </div>
+                        >
+                          <div className="w-full">
+                            <h1 className="text-white font-semibold desktop:text-md text-md ">
+                              {name
+                                .replace(" - Illustration", "")
+                                .replace(" - Graffiti", "")}
+                            </h1>
+                            <div className="flex font-medium justify-between items-center">
+                              <span className="text-sm">Open in behance</span>
+                              <span className="flex items-center gap-x-2">
+                                <div className="flex items-center gap-x-1">
+                                  <span className="text-sm">
+                                    {appreciations}
+                                  </span>
+                                  <LikeComponent fill="white" />
+                                </div>
+                                <div className="flex items-center gap-x-1">
+                                  <span className="text-sm">{views}</span>
+                                  <ViewComponent fill="white" />
+                                </div>
+                              </span>
                             </div>
                           </div>
                         </div>
-                      </a>
+                      </div>
                     </Link>
                   </div>
                 </div>

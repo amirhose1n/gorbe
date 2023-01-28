@@ -4,7 +4,7 @@ import WorkRenderer from "./workRenderer";
 
 function Graffiti({ data }: any) {
   return (
-    <div className="bg-dark-100 font-bold min-h-screen">
+    <div className="bg-dark-400 font-bold min-h-screen">
       <Head>
         <title>Everythingbygorbe | graffities</title>
       </Head>
