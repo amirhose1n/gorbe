@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import tw from "twin.macro";
-
+import { DESKTOP_WIDTH } from "../../config";
 const GlobalStyle = createGlobalStyle`
 
 .layout {
@@ -29,6 +29,13 @@ html {
   overflow:visible !important;
 }
 
+@media only screen and (max-width: ${DESKTOP_WIDTH}px) {
+  .spray {
+    animation: shakeMobile 0.5s;
+    animation-iteration-count: infinite;
+  }
+}
+
 @keyframes shake {
   0% { transform: translate(1px, 1px) rotate(0deg); }
   10% { transform: translate(-1px, -2px) rotate(-1deg); }
@@ -41,6 +48,20 @@ html {
   80% { transform: translate(-1px, -1px) rotate(1deg); }
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@keyframes shakeMobile {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -1px) rotate(-1deg); }
+  20% { transform: translate(-1px, 0px) rotate(1deg); }
+  30% { transform: translate(2px, 1px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 1px) rotate(-1deg); }
+  60% { transform: translate(-1px, 1px) rotate(0deg); }
+  70% { transform: translate(1px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -1px) rotate(-1deg); }
 }
 
 
@@ -69,14 +90,12 @@ html {
   animation: bounce 1.5s ease alternate;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: ${DESKTOP_WIDTH}px) {
   .jump {
     transform-origin: 50% 50%;
     animation: bounceMd 1.5s ease alternate;
   }
 }
-
-
 
 `;
 
