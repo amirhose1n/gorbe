@@ -137,7 +137,7 @@ function Gorbe() {
               height={69}
             />
           </div>
-          <div className="absolute spray-parent right-[14.8%] bottom-[3.6%] max-w-[14%] flex justify-center items-center">
+          <div className="absolute spray-parent right-[14.8%] sm:bottom-[3.6%] bottom-[5.3%] max-w-[14%] flex justify-center items-center">
             <Image
               src="/images/screen1.png"
               alt="ScreenOne"
@@ -149,7 +149,7 @@ function Gorbe() {
               height={413}
             />
           </div>
-          <div className="absolute opac spray-parent right-[1.8%] bottom-[19.6%] max-w-[22%] flex justify-center items-center">
+          <div className="absolute opac spray-parent right-[1.8%] sm:bottom-[19.6%] bottom-[21%] max-w-[22%] flex justify-center items-center">
             <Image
               src="/images/screen2.png"
               alt="ScreenTwo"
