@@ -9,6 +9,7 @@
   "dependencies": {
     "@emailjs/browser": "^3.7.0",
     "@metamask/detect-provider": "^1.2.0",
+    "@svgr/webpack": "^6.5.1",
     "@zencats/contracts": "^1.5.1",
     "axios": "^0.27.2",
     "babel-plugin-macros": "^3.1.0",

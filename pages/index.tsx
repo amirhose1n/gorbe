@@ -52,7 +52,7 @@ function Home() {
           {menus.map(({ image, link, size, target = "_self" }) => (
             <div
               key={image}
-              className="hover:scale-110 transition-all duration-200 sm:py-2 py-1.5"
+              className="hover:scale-110 cursor-pointer transition-all duration-200 sm:py-2 py-1.5"
             >
               <Link href={link} target={target}>
                 <img src={`/images/texts/${image}`} alt={image} {...size} />
