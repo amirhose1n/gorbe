@@ -43,7 +43,6 @@ export async function getServerSideProps({ query: { index } }: any) {
       },
     };
   }
-
   let data = await fetchBehance();
   // const data = {
   //   props: {
