@@ -7,7 +7,7 @@ function Test({ document }: any) {
 }
 
 export async function getServerSideProps() {
-  const url = "https://www.behance.net/Everythingbygorbe";
+  const url = "https://www.behance.net/Everythingbygorbe/projects";
   const { data } = await axios.get(url);
   const document = parse(data);
   return {
