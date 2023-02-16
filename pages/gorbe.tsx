@@ -4,6 +4,10 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
+import LittleCat from "../public/images/littleCat.png";
+import ScreenOne from "../public/images/screen1.png";
+import ScreenTwo from "../public/images/screen2.png";
+import Spray from "../public/images/Spray.png";
 import PageHeader from "../src/components/pageHeader";
 const expriences = [
   {
@@ -114,7 +118,7 @@ function Gorbe() {
           <div className="absolute spray-parent left-[28%] bottom-[4%] max-w-[4%] flex justify-center items-center">
             <Image
               onClick={startSpray}
-              src="/images/Spray.png"
+              src={Spray}
               alt="Spray"
               className={classNames(
                 "cursor-grab overflow-visible",
@@ -127,7 +131,7 @@ function Gorbe() {
           <div className="absolute spray-parent max-w-[5%] right-[18.5%] top-[26%] flex justify-center items-center">
             <Image
               onClick={startCat}
-              src="/images/littleCat.png"
+              src={LittleCat}
               alt="Spray"
               className={classNames(
                 "cursor-pointer overflow-visible",
@@ -139,7 +143,7 @@ function Gorbe() {
           </div>
           <div className="absolute spray-parent right-[14.8%] sm:bottom-[3.6%] bottom-[5.3%] max-w-[14%] flex justify-center items-center">
             <Image
-              src="/images/screen1.png"
+              src={ScreenOne}
               alt="ScreenOne"
               className={classNames(
                 computerOn ? "opacity-100" : "opacity-0 delay-500",
@@ -151,7 +155,7 @@ function Gorbe() {
           </div>
           <div className="absolute opac spray-parent right-[1.8%] sm:bottom-[19.6%] bottom-[21%] max-w-[22%] flex justify-center items-center">
             <Image
-              src="/images/screen2.png"
+              src={ScreenTwo}
               alt="ScreenTwo"
               className={classNames(
                 computerOn ? "opacity-100 delay-500" : "opacity-0",
