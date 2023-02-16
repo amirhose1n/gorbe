@@ -4,6 +4,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
+import ContactBg from "../public/images/ContactBackground.jpg";
 import LittleCat from "../public/images/littleCat.png";
 import ScreenOne from "../public/images/screen1.png";
 import ScreenTwo from "../public/images/screen2.png";
@@ -19,12 +20,12 @@ const expriences = [
     link: "https://www.takhtehsnowboards.com/",
   },
   {
-    image: "/images/Stickerbomb_icon.png",
-    link: "https://www.stickerbombworld.com/",
+    image: "/images/Tsixty_Icon.png",
+    link: "https://www.tsixty.com/",
   },
   {
-    image: "/images/Sotoon.png",
-    link: "https://sotoon.ir/",
+    image: "/images/Stickerbomb_icon.png",
+    link: "https://www.stickerbombworld.com/",
   },
   {
     image: "/images/Azadegan_Icon.png",
@@ -35,8 +36,8 @@ const expriences = [
     link: "https://boardflipwood.com/",
   },
   {
-    image: "/images/Tsixty_Icon.png",
-    link: "https://www.tsixty.com/",
+    image: "/images/Sotoon.png",
+    link: "https://sotoon.ir/",
   },
 ];
 
@@ -109,7 +110,7 @@ function Gorbe() {
         <PageHeader width={157} height={75} img="/images/Gorbe.png" />
         <div className="relative">
           <Image
-            src="/images/ContactBackground.jpg"
+            src={ContactBg}
             alt="Gorbe"
             className="rounded-md"
             width={5504}
@@ -174,8 +175,8 @@ function Gorbe() {
             className="w-3 h-3 cursor-pointer rounded-full right-[19.2%] bottom-[2%] absolute"
           ></div>
         </div>
-        <div className="flex flex-col pt-6 pb-6">
-          <div className="mb-1">
+        <div className="flex flex-col items-center pt-6 pb-6">
+          <div className="mb-2">
             <Image
               src="/images/GORBE_logo.png"
               width={100}
@@ -196,13 +197,13 @@ function Gorbe() {
           </p>
         </div>
 
-        <div className="flex flex-col -mr-6 pb-4 text-dark-500 font-normal">
-          <p>Selected clients and partners :</p>
-          <div className="grid grid-cols-3 md:grid-cols-7 items-center pt-2 sm:pt-0">
+        <div className="flex flex-col items-center pb-4 text-dark-500 font-normal">
+          <p>Selected clients and partners</p>
+          <div className="grid grid-cols-3 md:grid-cols-7 -mt-2 items-center">
             {expriences.map(({ link, image }, key) => {
               return (
                 <div
-                  className="mr-6 mt-6 cursor-pointer hover:scale-110 transition ease-out"
+                  className="px-4 mt-6 flex cursor-pointer hover:scale-110 transition ease-out"
                   key={key}
                 >
                   <Link href={link} target="_blank" className="pr-6">
@@ -218,9 +219,9 @@ function Gorbe() {
             })}
           </div>
         </div>
-        <div className="flex flex-col -mr-6 pb-12 text-dark-500 font-normal">
-          <p>Medias :</p>
-          <div className="flex items-center pt-2 sm:pt-4">
+        <div className="flex flex-col items-center pb-12 text-dark-500 font-normal">
+          <p>Medias</p>
+          <div className="flex items-center pt-2 sm:pt-2">
             {medias.map(({ link, image }, key) => {
               return (
                 <div
