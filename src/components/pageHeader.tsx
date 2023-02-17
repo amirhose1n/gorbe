@@ -13,7 +13,7 @@ function PageHeader({
 }) {
   const isMobile = useIsMobile();
   return (
-    <div className="relative pt-12 pb-6 sm:py-12 sm:px-0">
+    <div className="relative pt-12 pb-6 sm:py-12 sm:px-0 min-w-full">
       {isMobile && (
         <div className="absolute top-8 left-0 text-bold text-white text-xl transition-all duration-150 hover:text-dark-50">
           <Link href="/">

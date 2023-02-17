@@ -44,7 +44,7 @@ function Home() {
         <img
           src={"/images/gorbe.gif"}
           alt="gorbe"
-          className="object-cover h-screen"
+          className="object-cover h-screen min-w-full"
         />
       </div>
       <div className="mainmenu h-screen m-0 z-50 w-full min-h-full flex justify-center items-center top-0 absolute">

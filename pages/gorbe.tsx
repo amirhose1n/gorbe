@@ -107,7 +107,7 @@ function Gorbe() {
         <title>Everythingbygorbe | gorbe</title>
       </Head>
       <div className="layout layout--center">
-        <PageHeader width={157} height={75} img="/images/Gorbe.png" />
+        <PageHeader width={128} height={50} img="/images/Gorbe.png" />
         <div className="relative">
           <Image
             src={ContactBg}
@@ -115,6 +115,7 @@ function Gorbe() {
             className="rounded-md"
             width={5504}
             height={3200}
+            priority
           />
           <div className="absolute spray-parent left-[28%] bottom-[4%] max-w-[4%] flex justify-center items-center">
             <Image
