@@ -1,6 +1,11 @@
+import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
-import Graffities from "../../src/components/pages/projects/graffities";
 import Illustrators from "../../src/components/pages/projects/illustrators";
+
+const Graffities = dynamic(
+  () => import("../../src/components/pages/projects/graffities"),
+  { ssr: false }
+);
 
 function Projects({ projects }: any) {
   const {

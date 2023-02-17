@@ -10,6 +10,7 @@ import ScreenOne from "../public/images/screen1.png";
 import ScreenTwo from "../public/images/screen2.png";
 import Spray from "../public/images/Spray.png";
 import PageHeader from "../src/components/pageHeader";
+
 const expriences = [
   {
     image: "/images/ZenCats_Icon.png",
@@ -107,7 +108,7 @@ function Gorbe() {
         <title>Everythingbygorbe | gorbe</title>
       </Head>
       <div className="layout layout--center">
-        <PageHeader width={128} height={50} img="/images/Gorbe.png" />
+        <PageHeader width={153.6} height={60} img="/images/Gorbe.png" />
         <div className="relative">
           <Image
             src={ContactBg}

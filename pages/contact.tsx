@@ -22,7 +22,6 @@ function Contact() {
   const [isSent, setIsSent] = useState(false);
 
   const onSubmit = async () => {
-    console.log({ form });
     if (form.current) {
       setLoading(true);
       await emailjs
@@ -60,7 +59,7 @@ function Contact() {
               <Image
                 src="/images/SendingMessage.png"
                 width={380}
-                height={335}
+                height={292.6}
                 alt="message"
                 className="mt-4 sm:mt-2"
               />

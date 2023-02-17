@@ -15,38 +15,32 @@ function PageHeader({
   return (
     <div className="relative pt-12 pb-6 sm:py-12 sm:px-0 min-w-full">
       {isMobile && (
-        <div className="absolute top-8 left-0 text-bold text-white text-xl transition-all duration-150 hover:text-dark-50">
+        <div className="absolute top-8 left-0 text-bold text-white text-xl hover:text-dark-50 cursor-pointer">
           <Link href="/">
-            <div>
-              <Image
-                src={"/images/Back.png"}
-                width={!isMobile ? 45 : 35}
-                height={!isMobile ? 32 : 25}
-                alt="Home"
-                quality={100}
-                className="cursor-pointer"
-              />
-            </div>
+            <Image
+              src={"/images/Back.png"}
+              width={!isMobile ? 45 : 35}
+              height={!isMobile ? 32 : 25}
+              alt="Home"
+            />
           </Link>
         </div>
       )}
       <div className="flex w-full sm:justify-between items-center justify-center">
         {!isMobile && (
-          <Link
-            href="/"
-            className="relative text-bold text-white text-xl transition-all duration-150 hover:text-dark-50"
-          >
-            <div>
-              <Image
-                src={"/images/Back.png"}
-                width={!isMobile ? 45 : 35}
-                height={!isMobile ? 32 : 25}
-                alt="Home"
-                quality={100}
-                className="cursor-pointer"
-              />
-            </div>
-          </Link>
+          <div className="hover:scale-105 cursor-pointer transition ease-out">
+            <Link href="/" className="relative text-bold text-white text-xl">
+              <div>
+                <Image
+                  src={"/images/Back.png"}
+                  width={!isMobile ? 45 : 35}
+                  height={!isMobile ? 32 : 25}
+                  alt="Home"
+                  quality={100}
+                />
+              </div>
+            </Link>
+          </div>
         )}
         {img && (
           <Image
