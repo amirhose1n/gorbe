@@ -14,6 +14,15 @@ function Graffiti({ data }: any) {
           <div className="desktop:py-12 py-6 tablet:py-8">
             <WorkRenderer data={data} />
           </div>
+          <div className="pb-12">
+            <div className="relative rounded-md overflow-hidden">
+              <iframe
+                className="w-full h-[416px]"
+                src="https://seekbeak.com/v/60qZ4kv0zrB"
+                title="description"
+              ></iframe>
+            </div>
+          </div>
         </div>
       </div>
     </div>
