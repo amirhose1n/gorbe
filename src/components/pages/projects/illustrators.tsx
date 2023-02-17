@@ -10,7 +10,7 @@ function Illustrators({ data }: any) {
       </Head>
       <div className="layout layout--center flex flex-col items-center">
         <div className="relative">
-          <PageHeader width={226} height={60} img="/images/Illustration.png" />
+          <PageHeader width={228} height={60} img="/images/Illustration.png" />
           <div className="desktop:py-12 py-6 tablet:py-8">
             <WorkRenderer data={data} />
           </div>
