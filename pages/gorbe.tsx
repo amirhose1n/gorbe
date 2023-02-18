@@ -4,7 +4,6 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
-import ContactBg from "../public/images/ContactBackground.jpg";
 import LittleCat from "../public/images/littleCat.png";
 import ScreenOne from "../public/images/screen1.png";
 import ScreenTwo from "../public/images/screen2.png";
@@ -111,7 +110,7 @@ function Gorbe() {
         <PageHeader width={153.6} height={60} img="/images/Gorbe.png" />
         <div className="relative">
           <Image
-            src={ContactBg}
+            src={"/images/contactBackground.jpg"}
             alt="Gorbe"
             className="rounded-md"
             width={5504}
@@ -209,12 +208,14 @@ function Gorbe() {
                   key={key}
                 >
                   <Link href={link} target="_blank" className="pr-6">
-                    <Image
-                      src={image}
-                      width={140}
-                      height={100}
-                      alt="experiences"
-                    />
+                    <a target={"_blank"}>
+                      <Image
+                        src={image}
+                        width={140}
+                        height={100}
+                        alt="experiences"
+                      />
+                    </a>
                   </Link>
                 </div>
               );
@@ -231,12 +232,14 @@ function Gorbe() {
                   className="mr-2 hover:scale-110 cursor-pointer transition ease-out"
                 >
                   <Link href={link} target="_blank">
-                    <Image
-                      src={image}
-                      width={40}
-                      height={40}
-                      alt="experiences"
-                    />
+                    <a target={"_blank"}>
+                      <Image
+                        src={image}
+                        width={40}
+                        height={40}
+                        alt="experiences"
+                      />
+                    </a>
                   </Link>
                 </div>
               );
